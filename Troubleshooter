@@ -1,0 +1,15 @@
+If you will stumble upon any issues with the Ninja configure of the CMake, do the following:
+
+```bash
+rm -rf build
+cmake -S . -B build -G Ninja
+cmake --build build
+```
+
+After than we need to check whether everything is fine. Run the following:
+
+```bash
+cmake -S . -B build -G Ninja
+cmake --build build
+find build -maxdepth 2 -type f
+```
