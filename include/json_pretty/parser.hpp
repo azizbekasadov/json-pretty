@@ -16,7 +16,7 @@ public:
 
 private:
   std::string_view input_;
-  std::size_t pos = 0;
+  std::size_t pos_ = 0;
   std::size_t line_ = 1;
   std::size_t column_ = 1;
 };
